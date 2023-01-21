@@ -6,6 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponentsModule } from './material-components/material-components.module';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatButtonModule} from '@angular/material/button';
+import { ComponentsModule } from './components/components.module';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +22,8 @@ import { MaterialComponentsModule } from './material-components/material-compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialComponentsModule
+    MaterialComponentsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

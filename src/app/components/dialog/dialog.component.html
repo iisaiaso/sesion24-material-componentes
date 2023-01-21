@@ -1,0 +1,22 @@
+<mat-card class="example-card mx-auto mt-5">
+  <mat-card-header>
+    <div class="flex">
+      <div mat-card-avatar class="example-header-image ml-5"></div>
+      <div class="ml-3 mt-1"><mat-card-title>Angular Material</mat-card-title></div>
+    </div>
+  </mat-card-header>
+  <ol>
+    <li>
+      <mat-form-field class="w-full py-5 px-5">
+        <mat-label>Cual es tu nombre? </mat-label>
+        <input matInput [(ngModel)]="name" />
+      </mat-form-field>
+    </li>
+    <li class="text-center pb-5">
+      <button mat-raised-button (click)="openDialog()">Abrir Dialog</button>
+    </li>
+    <li *ngIf="deporte" class="text-center pb-5">
+      Tu deporte favorito es: <i>{{deporte}}</i>
+    </li>
+  </ol>
+</mat-card>
